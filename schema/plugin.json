@@ -6,7 +6,7 @@
   "properties": {
     "snippets": {
       "title": "Code Snippet",
-      "description": "The list code snippet. NOTICE: Command is unique, please provide an unique command for each code snippet",
+      "description": "The list code snippet. NOTICE: After add,edit or remove, please reload to see change",
       "type": "array",
       "items": { "$ref": "#/definitions/snippet" },
       "default": []
@@ -35,38 +35,12 @@
         "content": {
           "type": "string",
           "description": "Content of code snippet"
-        },
-        "items": {
-          "description": "List snippet by category",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/snippetItem"
-          }
         }
-      },
-      "type": "object"
-    },
-    "snippetItem": {
-      "properties": {
-        "label": {
-          "type": "string",
-          "description": "Label of code snippet"
-        },
-        "command": {
-          "type": "string",
-          "description": "Command of code snippet"
-        },
-        "caption": {
-          "type": "string",
-          "description": "Caption of code snippet"
-        },
-        "content": {
-          "type": "string",
-          "description": "Content of code snippet"
-        }
+      
       },
       "type": "object",
-      "required": ["label", "command", "caption", "content"]
+      "required": ["label", "command", "content", "category"]
+
     }
   }
 }

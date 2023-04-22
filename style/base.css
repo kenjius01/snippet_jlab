@@ -1,5 +1,11 @@
+/* stylelint-disable selector-class-pattern */
+
 /*
     See the JupyterLab Developer Guide for useful CSS Patterns:
 
     https://jupyterlab.readthedocs.io/en/stable/developer/css.html
 */
+
+.jp-Dialog-content {
+  max-height: 780px;
+}
